@@ -1,21 +1,54 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="content">
 
-<router-outlet></router-outlet>
+  <mat-card>
+    <mat-card-title-group>
+      <mat-card-title>ConfigCat</mat-card-title>
+      <mat-card-subtitle>Deploy on fridays too...</mat-card-subtitle>
+    </mat-card-title-group>
+    <mat-card-content>
+      <p>
+        Manage your features and configurations without actually deploying new code.
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="navigate('https://configcat.com/')">CONFIGCAT.COM</button>
+    </mat-card-actions>
+  </mat-card>
+  <br>
+
+  <mat-card>
+    <mat-card-title-group>
+      <mat-card-title>Split</mat-card-title>
+      <mat-card-subtitle>Reduce risk of Continuous Delivery</mat-card-subtitle>
+    </mat-card-title-group>
+    <mat-card-content>
+      <p>
+        Split powers your product decisions
+        with a unified solution for feature flagging
+        and experimentation.
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="navigate('https://www.split.io/')">SPLIT.IO</button>
+    </mat-card-actions>
+  </mat-card>
+  <br>
+
+  <mat-card>
+    <mat-card-title-group>
+      <mat-card-title>Bullet Train</mat-card-title>
+      <mat-card-subtitle>Release features with confidence</mat-card-subtitle>
+    </mat-card-title-group>
+    <mat-card-content>
+      <p>
+        Bullet Train lets you manage feature flags and remote config across web, mobile and server side applications.
+        Deliver true Continuous Integration. Get builds out faster. Control who has access to new features.
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="navigate('https://bullet-train.io/')">BULLET-TRAIN.IO</button>
+    </mat-card-actions>
+  </mat-card>
+  <br>
+
+</div>

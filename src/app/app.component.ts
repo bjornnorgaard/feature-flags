@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'flaggo';
+
+  public navigate(url: string): void {
+    window.location.href = url;
+  }
 }
