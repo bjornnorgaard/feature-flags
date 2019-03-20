@@ -1,2 +1,2 @@
-# feature-flags
-Testing services for deploying feature flags
+# Feature Flags
+Testing services for deploying feature flags.
