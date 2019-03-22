@@ -1,7 +1,7 @@
 {
   "name": "Flaggo",
   "short_name": "Flaggo",
-  "theme_color": "#70C1B3",
+  "theme_color": "#F9DC5C",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "/",
