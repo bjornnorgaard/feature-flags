@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import * as configcat from 'configcat-js';
-import {IConfigCatClient} from 'configcat-common/lib/ConfigCatClient';
+import {ConfigCatService} from './services/config-cat/config-cat.service';
 
 @Component({
   selector: 'app-root',
@@ -9,21 +8,17 @@ import {IConfigCatClient} from 'configcat-common/lib/ConfigCatClient';
 })
 export class AppComponent implements OnInit {
 
-  constructor() {
-    this.configCatClient = configcat.createClientWithAutoPoll('a63WCEgeG3MGi8-AI1PXSg/0Cd4SrVP2EC0gTqC_VLclQ', {
-      pollIntervalSeconds: 10
-    });
-  }
+  public showCat = false;
 
-  public configCatClient: IConfigCatClient;
-  public showCat: boolean;
-
-  static navigate(url: string): void {
-    window.location.href = url;
+  constructor(private catService: ConfigCatService) {
   }
 
   ngOnInit(): void {
-    this.configCatClient.getValue('showCatCard', false, value => this.showCat = value);
+    this.catService.client.getValue('showCatCard', false, value => this.showCat = value);
+  }
+
+  public navigate(url: string): void {
+    window.location.href = url;
   }
 
 }
