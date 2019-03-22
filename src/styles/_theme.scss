@@ -3,3 +3,12 @@ $flaggo-red: #FB3640;
 $flaggo-green: #70C1B3;
 $flaggo-purple: #8F2D56;
 $flaggo-yellow: #F9DC5C;
+
+.on {
+  color: white;
+  background-image: linear-gradient($flaggo-green, $flaggo-blue);
+}
+
+.off {
+  background-image: linear-gradient($flaggo-yellow, $flaggo-red);
+}
