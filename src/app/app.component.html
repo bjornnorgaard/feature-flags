@@ -3,7 +3,7 @@
   <mat-card [class.on]="showCat"
             [class.off]="!showCat">
     <mat-card-title-group>
-      <mat-card-title>ConfigCat</mat-card-title>
+      <mat-card-title>ConfigCat {{showCat ? 'enabled' : 'disabled'}}</mat-card-title>
       <mat-card-subtitle>Deploy on fridays too...</mat-card-subtitle>
     </mat-card-title-group>
     <mat-card-content>

@@ -1,13 +1,10 @@
 @import "styles/theme";
 
 html,
-
-body {
-  height: 100%;
-}
-
 body {
   margin: 0;
+  padding-bottom: 1em;
+  height: 100%;
   font-family: Roboto, "Helvetica Neue", sans-serif;
   background-image: linear-gradient($flaggo-yellow, $flaggo-green);
 }
