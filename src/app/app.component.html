@@ -16,9 +16,10 @@
     </mat-card-actions>
   </mat-card>
 
-  <mat-card>
+  <mat-card [class.on]="showSplit"
+            [class.off]="!showSplit">
     <mat-card-title-group>
-      <mat-card-title>Split</mat-card-title>
+      <mat-card-title>Split {{showSplit ? 'enabled' : 'disabled'}}</mat-card-title>
       <mat-card-subtitle>Reduce risk of Continuous Delivery</mat-card-subtitle>
     </mat-card-title-group>
     <mat-card-content>
